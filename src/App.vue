@@ -1,10 +1,18 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+<barNavVue/>
   <router-view/>
 </template>
+
+<script>
+import barNavVue from './components/barNav.vue'
+
+export default {
+  components:{
+    barNavVue
+  }
+}
+</script>
+
 
 <style>
 #app {
